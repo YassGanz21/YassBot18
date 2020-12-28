@@ -168,7 +168,7 @@ client.on('group-participants-update', async (anu) => {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["6285277030729@s.whatsapp.net", "6283102650464@s.whatsapp.net"] // ganti nomer lu
+			const ownerNumber = ["6283879241802@s.whatsapp.net", "6283879241802@s.whatsapp.net"] // ganti nomer lu
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -665,7 +665,7 @@ break
 						mentions(teks, mentioned, true)
 						client.groupRemove(from, mentioned)
 					} else {
-						mentions('ENAK OM DI KICK? APA GAK SENANG BY1 DEKCT @${mentioned[0].split('@')[0]} TOLOL🏃`, mentioned, true)
+						mentions('ENAK OM DI KICK? APA @${mentioned[0].split('@')[0]} TOLOL🏃`, mentioned, true)
 						client.groupRemove(from, mentioned)
 					}
 					break
